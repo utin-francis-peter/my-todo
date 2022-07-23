@@ -34,7 +34,7 @@ function computeNewUserTask(userTask, userTaskID) {
 // ==> update localStorage
 function updateLocalStorage(allTodo) {
 	localStorage.setItem("allTodo", JSON.stringify(allTodo));
-	console.log(allTodo);
+	// console.log(allTodo);
 }
 // ==> create elements
 function createDOMelements(userTask, userTaskID) {
@@ -101,7 +101,7 @@ function deleteTodoFxn({
 		// on clicking element, target ID of the element
 		// if targeted id is a match with what's present in the allTodo array, remove element from the array.
 		const todoIsMatch = findIsMatch(allTodo, e);
-		console.log(todoIsMatch);
+		// console.log(todoIsMatch);
 		// remove todiIsMatch element from the allTodo array and update
 		allTodo.splice(todoIsMatch, 1);
 		// update todos in localStorage
